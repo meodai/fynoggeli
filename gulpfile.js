@@ -17,8 +17,10 @@ const gulp = require('gulp'),
       sass = require('gulp-sass'),
       postcss = require('gulp-postcss'),
       autoprefixer = require('autoprefixer'),
+      jsonImporter = require('node-sass-json-importer'),
       cssnano = require('cssnano');
 
+let images;
 
 gulp.task('clean', () => {
   return del('./build/');
@@ -29,16 +31,23 @@ gulp.task('css', ['clean'], () => {
     autoprefixer({browsers: ['last 2 versions']}),
     cssnano()
   ];
+
   return gulp.src('./src/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss())
+    .pipe(sass({
+      includePaths: [
+        './node_modules',
+      ],
+      importer: jsonImporter,
+      errLogToConsole: true
+    }).on('error', sass.logError))
+    //.pipe(postcss())
     .pipe(gulp.dest('./build/css'));
 });
 
-gulp.task('html', ['clean'], () => {
+gulp.task('html', ['clean', 'images'], () => {
   return gulp.src('./src/index.pug')
     .pipe( data({
-      foo: 'bar'
+      images: images
     }) )
     .pipe( pug() )
     .pipe( gulp.dest('./build/') );
@@ -49,10 +58,15 @@ gulp.task('css:watch', () => {
 });
 
 gulp.task('images', ['clean'], () => {
+  images = [];
   return gulp.src('./data/images/*')
+    .pipe(tap((file) => {
+      const pathStr = file.path;
+      images.push(file.path.split('/').pop());
+    }))
     .pipe(imagemin())
     .pipe(gulp.dest('./build/images/'))
 });
 
 
-gulp.task('default', ['clean', 'css', 'html', 'images']);
+gulp.task('default', ['clean', 'css','images', 'html']);

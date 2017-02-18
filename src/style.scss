@@ -1,0 +1,26 @@
+@import 'normalize-scss/sass/normalize';
+@import 'dialog-settings/dist/dialog-settings';
+
+
+@import 'design.json';
+@include settings($design);
+
+$base-font-size: setting(font-size);
+$base-line-height: $base-font-size + (setting(leading)/2);
+$base-unit: 'rem';
+$base-font-family: setting(font);
+
+$h1-font-size: 2    * $base-font-size;
+$h2-font-size: 1.5  * $base-font-size;
+$h3-font-size: 1.17 * $base-font-size;
+$h4-font-size: 1    * $base-font-size;
+$h5-font-size: 0.83 * $base-font-size;
+$h6-font-size: 0.67 * $base-font-size;
+
+$indent-amount: 40px;
+
+@include normalize();
+
+body {
+  background: setting(background-color);
+}

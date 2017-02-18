@@ -6,3 +6,5 @@ block body
     include logo.svg
     include:markdown-it ../data/text/about.md
     include:markdown-it ../data/text/contact.md
+  each image in images
+    img(src='images/' + image, alt=image)
