@@ -4,6 +4,9 @@
 
         "font": "'Arial, sans-serif'",
         "font-size": "18px",
-        "leading": "23px"
+        "leading": "23px",
+
+        "logo-width": "240px",
+        "logo-color": "#231f20"
     }
 }
