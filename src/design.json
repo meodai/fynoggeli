@@ -9,6 +9,7 @@
 
         "logo-width": "240px",
         "logo-color": "#231f20",
+        "logo-stack-top": "20px",
 
         "bezel-content": "20px",
         "bezel-website": "20px",

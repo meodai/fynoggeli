@@ -69,7 +69,15 @@ gulp.task('images', ['clean'], () => {
     .pipe(gulp.dest('./build/images/'))
 });
 
-gulp.task('build', ['clean', 'css','images', 'html']);
+
+gulp.task('mask', ['clean'], () => {
+  return gulp.src('./src/mask.png')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./build/images/'))
+});
+
+
+gulp.task('build', ['clean', 'css', 'images', 'mask', 'html']);
 
 gulp.task('deploy', ['build'], () => {
   return gulp.src('./build/**/*')
