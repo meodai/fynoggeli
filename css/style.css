@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * dialog-settings - SASS/SCSS module settings
  * @version v1.1.0
@@ -503,6 +504,22 @@ body {
   background: #fff;
   color: #231f20; }
 
+a {
+  text-decoration: none; }
+
+ul, ol {
+  margin-top: 0;
+  padding-left: 1em;
+  list-style: none; }
+  ul li, ol li {
+    position: relative; }
+    ul li:before, ol li:before {
+      content: '–';
+      position: absolute;
+      left: -1em;
+      top: 0;
+      height: 1em; }
+
 img {
   display: block; }
 
@@ -534,6 +551,22 @@ img {
   padding: 20px;
   background-color: #fff;
   overflow: auto; }
+  @media screen and (max-width: 736px) {
+    .contents {
+      width: auto;
+      min-width: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      max-height: none;
+      height: 100vh; } }
+
+.contact ul, .contact li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .contact ul:before, .contact li:before {
+    display: none; }
 
 .is-hidden {
   border: 0;
