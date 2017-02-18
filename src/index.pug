@@ -1,10 +1,16 @@
 extends layout
 
 block body
-  h1 fynöggeli
   main
-    include logo.svg
-    include:markdown-it ../data/text/about.md
-    include:markdown-it ../data/text/contact.md
-  each image in images
-    img(src='images/' + image, alt=image)
+    aside.images
+      h3.is-hidden Works
+      each image in images
+        img.images__image(src='images/' + image, alt=image)
+
+    section.contents
+      h1
+        span.is-hidden Fynöggeli
+        include logo.svg
+      include:markdown-it ../data/text/about.md
+      include:markdown-it ../data/text/contact.md
+
