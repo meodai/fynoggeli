@@ -1,0 +1,8 @@
+extends layout
+
+block body
+  h1 fynöggeli
+  main
+    include logo.svg
+    include:markdown-it ../data/text/about.md
+    include:markdown-it ../data/text/contact.md

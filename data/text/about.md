@@ -1,10 +1,5 @@
-fynöggeli macht kleine und weniger
-kleine Objekte und Gegenstände.
-Diese fabriziert Myriam Aerne
-vorwiegend aus Papier, aber auch
-aus lauter anderen Materialien,
-welche auf dem Estrich oder einem
-Flohmarkt gefunden werden können.
+fynöggeli macht kleine und weniger kleine Objekte und Gegenstände.
+Diese fabriziert Myriam Aerne vorwiegend aus Papier, aber auch aus lauter anderen Materialien, welche auf dem Estrich oder einem Flohmarkt gefunden werden können.
 
 ## Verkaufspunkte unserer Produkte
 
