@@ -1,0 +1,28 @@
+{
+  "name": "fynoggeli",
+  "version": "1.0.0",
+  "description": "Fynöggeli ist ein Label, welches selbstgemachte Accessoires aus Papier und anderen ausgwählten Materialien  herstellt.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meodai/fynoggeli.git"
+  },
+  "author": "David Aerne, Jonas Wandeler, Myriam Aerne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meodai/fynoggeli/issues"
+  },
+  "homepage": "https://github.com/meodai/fynoggeli#readme",
+  "dependencies": {
+    "autoprefixer": "^6.7.3",
+    "cssnano": "^3.10.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
