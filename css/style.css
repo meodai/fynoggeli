@@ -530,8 +530,8 @@ img {
   display: block;
   width: 63.15789%;
   height: auto;
-  margin: 0 auto; }
-  .logo path {
+  margin: 20px auto 0; }
+  .logo g {
     fill: #231f20; }
 
 .images {
