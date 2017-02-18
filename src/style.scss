@@ -14,8 +14,6 @@ $h1-font-size: 2    * $base-font-size;
 $h2-font-size: 1.5  * $base-font-size;
 $h3-font-size: 1.17 * $base-font-size;
 $h4-font-size: 1    * $base-font-size;
-$h5-font-size: 0.83 * $base-font-size;
-$h6-font-size: 0.67 * $base-font-size;
 
 $indent-amount: 40px;
 
@@ -23,6 +21,46 @@ $indent-amount: 40px;
 
 body {
   background: setting(background-color);
+  color: setting(text-color);
+}
+
+img {
+  display: block;
+}
+
+.logo-wrap {
+  margin: 0;
+}
+.logo {
+  display: block;
+  width: (setting(logo-width)/setting(content-width)) * 100%;
+  height: auto;
+  margin: 0 auto;
+  path {
+    fill: setting(logo-color);
+  }
+}
+
+.images {
+  &__wrap {
+    height: 100vh;
+    overflow: hidden;
+  }
+  &__image {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+.contents {
+  position: fixed;
+  top: setting(bezel-website);
+  left: setting(bezel-website);
+  width: (setting(content-width)/setting(design-width)) * 100%;
+  min-width: setting(content-width);
+
+  box-sizing: border-box;
+  padding: setting(bezel-content);
+  background-color: setting(background-color);
 }
 
 .is-hidden {
