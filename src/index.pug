@@ -3,7 +3,7 @@ extends layout
 block body
   main
     aside.images
-      h3.is-hidden Works
+      h3.is-hidden Arbeiten
       each image in images
         .images__wrap(style='background-image: url(images/' + image + ')')
 
@@ -11,6 +11,10 @@ block body
       h1.logo-wrap
         span.is-hidden Fynöggeli
         include logo.svg
-      include:markdown-it ../data/text/about.md
-      include:markdown-it ../data/text/contact.md
+      article
+        h2.is-hidden Über uns
+        include:markdown-it ../data/text/about.md
+      aside.contact
+        h2.is-hidden Kontakt
+        include:markdown-it ../data/text/contact.md
 
