@@ -1,8 +1,9 @@
 {
     "design": {
         "background-color": "#fff",
+
+        "font": "'Arial, sans-serif'",
         "font-size": "18px",
-        "leading": "23px",
-        "font": "'Arial, sans-serif'"
+        "leading": "23px"
     }
 }
