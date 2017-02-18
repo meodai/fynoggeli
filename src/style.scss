@@ -10,9 +10,9 @@ $base-line-height: $base-font-size + (setting(leading)/2);
 $base-unit: 'rem';
 $base-font-family: setting(font);
 
-$h1-font-size: 2    * $base-font-size;
-$h2-font-size: 1.5  * $base-font-size;
-$h3-font-size: 1.17 * $base-font-size;
+$h1-font-size: 1    * $base-font-size;
+$h2-font-size: 1    * $base-font-size;
+$h3-font-size: 1    * $base-font-size;
 $h4-font-size: 1    * $base-font-size;
 
 $indent-amount: 40px;
@@ -45,10 +45,8 @@ img {
   &__wrap {
     height: 100vh;
     overflow: hidden;
-  }
-  &__image {
-    object-fit: cover;
-    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
   }
 }
 .contents {
