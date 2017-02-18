@@ -534,14 +534,45 @@ img {
   .logo path {
     fill: #231f20; }
 
-.images__wrap {
-  height: 100vh;
-  overflow: hidden;
-  background-size: cover;
-  background-position: 50% 50%; }
+.images {
+  position: relative; }
+  .images__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-mask: url(../images/mask.png);
+    mask: url(../images/mask.png);
+    -webkit-mask-size: 3000% 100%;
+    mask-size: 3000% 100%; }
+    .images__wrap.play {
+      animation: mask-play 1.4s steps(29) forwards;
+      -webkit-animation: mask-play 1.4s steps(29) forwards; }
+
+@keyframes mask-play {
+  from {
+    mask-position: 0% 0;
+    -webkit-mask-position: 0% 0; }
+  to {
+    mask-position: 100% 0;
+    -webkit-mask-position: 100% 0; } }
+
+@-webkit-keyframes mask-play {
+  from {
+    mask-position: 0% 0;
+    -webkit-mask-position: 0% 0; }
+  to {
+    mask-position: 100% 0;
+    -webkit-mask-position: 100% 0; } }
 
 .contents {
   position: fixed;
+  z-index: 1000;
   top: 20px;
   left: 20px;
   width: 26.38889%;
