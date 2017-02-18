@@ -12,6 +12,7 @@ const gulp = require('gulp'),
       // system
       del = require('del'),
       tap = require('gulp-tap'),
+      ghPages = require('gulp-gh-pages'),
 
       // design
       sass = require('gulp-sass'),
@@ -68,5 +69,12 @@ gulp.task('images', ['clean'], () => {
     .pipe(gulp.dest('./build/images/'))
 });
 
+gulp.task('build', ['clean', 'css','images', 'html']);
 
-gulp.task('default', ['clean', 'css','images', 'html']);
+gulp.task('deploy', ['build'], () => {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
+
+
+gulp.task('default', ['build']);

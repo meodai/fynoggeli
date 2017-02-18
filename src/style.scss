@@ -55,10 +55,11 @@ img {
   left: setting(bezel-website);
   width: (setting(content-width)/setting(design-width)) * 100%;
   min-width: setting(content-width);
-
+  max-height: calc(100% - #{(setting(bezel-website) * 2)});
   box-sizing: border-box;
   padding: setting(bezel-content);
   background-color: setting(background-color);
+  overflow: auto;
 }
 
 .is-hidden {
