@@ -1,8 +1,8 @@
 # fynöggeli
-Fynöggeli est un label, qui produits des accesoires fait main en papier, tissus et autres materiaux. Le nom fynöggeli signifie une personne qui travaille avec beaucoup de soin et qui apporte de l'attention aux détails.
+Fynöggeli est un label, qui produits des accesoires fait main en papier, tissus et autres materiaux. Le nom fynöggeli vient du singinois et signifie une personne qui travaille avec beaucoup de soin et qui apporte de l'attention aux détails.
 
 Fynöggeli ist ein Label, welches selbstgemachte Accessoires aus Papier, Stoff und anderen ausgwählten Materialien herstellt.
-Der gewählte Name bezeichnet jemanden, der mit viel Sorfalt und Liebe zum Detail arbeitet.
+Der gewählte Name bezeichnet auf Senslerdeutsch jemanden, der mit viel Sorfalt und Liebe zum Detail arbeitet.
 
 ## About
 Myriam Aerne est de metier modiste et restauratrice en papier. Sa passion est de creer des petits objets avec des materiaux qui croisent son chemin. Ces objets sont produits sur sol fribourgeois. Myriam est heureuse maman de deux garçons Louis et Jeannot et vie avec eux et son partenaire Gédéon dans la ville de Fribourg.
