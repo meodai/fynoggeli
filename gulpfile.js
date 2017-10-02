@@ -7,6 +7,7 @@ const gulp = require('gulp'),
       // content
       data = require('gulp-data'),
       imagemin = require('gulp-imagemin'),
+      responsive = require('gulp-responsive'),
       md = require('jstransformer')(require('jstransformer-markdown-it')),
 
       // system
@@ -64,6 +65,11 @@ gulp.task('images', ['clean'], () => {
     .pipe(tap((file) => {
       const pathStr = file.path;
       images.push(file.path.split('/').pop());
+    }))
+    .pipe(responsive({
+      '*': {
+        width: 1240
+      }
     }))
     .pipe(imagemin())
     .pipe(gulp.dest('./build/images/'))
