@@ -1,5 +1,6 @@
 # Point de vente des objets fynöggeli / Verkaufspunkte meiner Produkte
 
+- Ialoo.ch
 - Dédé & Charlotte, Rue de Lausanne 46, Fribourg
 - La petite tribu, Rue de Vevey 58, Bulle
 - Office du tourisme, Place Jean-Tinguely 1, Fribourg
