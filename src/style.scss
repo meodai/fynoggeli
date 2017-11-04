@@ -78,27 +78,11 @@ img {
     overflow: hidden;
     background-size: cover;
     background-position: 50% 50%;
-  }
-}
-
-@keyframes mask-play {
-  from {
-    mask-position: 0% 0;
-    -webkit-mask-position: 0% 0;
-  }
-  to {
-    mask-position: 100% 0;
-    -webkit-mask-position: 100% 0;
-  }
-}
-@-webkit-keyframes mask-play {
-  from {
-    mask-position: 0% 0;
-    -webkit-mask-position: 0% 0;
-  }
-  to {
-    mask-position: 100% 0;
-    -webkit-mask-position: 100% 0;
+    opacity: 0;
+    transition: opacity 200ms linear;
+    &.play {
+      opacity: 1;
+    }
   }
 }
 
