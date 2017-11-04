@@ -98,12 +98,13 @@ img {
   padding: setting(bezel-content);
   background-color: setting(background-color);
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   @include mq(max, $mobile){
     width: auto;
     top: setting(bezel-website); 
     left: setting(bezel-website); 
     right: setting(bezel-website);
-    max-height: none;
+    max-height: calc(100% - #{(setting(bezel-website) * 2)});
     min-width: none;
     height: auto;
     
