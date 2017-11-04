@@ -105,7 +105,7 @@ img {
     left: setting(bezel-website); 
     right: setting(bezel-website);
     max-height: calc(100% - #{(setting(bezel-website) * 2)});
-    min-width: none;
+    min-width: auto;
     height: auto;
     
   }
