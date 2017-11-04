@@ -11,9 +11,12 @@ block body
       h1.logo-wrap
         span.is-hidden Fynöggeli
         include logo.svg
-      article
-        h2.is-hidden Über uns
-        include:markdown-it ../data/text/about.md
-      aside.contact
-        h2.is-hidden Kontakt
-        include:markdown-it ../data/text/contact.md
+        a.toggle.js-toggle(href="#")
+          span En savoir plus / Mehr erfahren
+      div.contents__inner
+        article
+          h2.is-hidden Über mich
+          include:markdown-it ../data/text/about.md
+        aside.contact
+          h2.is-hidden Kontakt
+          include:markdown-it ../data/text/contact.md

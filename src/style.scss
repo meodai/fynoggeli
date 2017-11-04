@@ -100,10 +100,35 @@ img {
   overflow: auto;
   @include mq(max, $mobile){
     width: auto;
-    top: setting(bezel-website); left: setting(bezel-website);
-    bottom: setting(bezel-website);
+    top: setting(bezel-website); 
+    left: setting(bezel-website); 
+    right: setting(bezel-website);
     max-height: none;
-    height: 100vh;
+    height: auto;
+    
+  }
+  &__inner {
+    @include mq(max, $mobile){
+      height: 0;
+      overflow: hidden;
+
+    }
+  }
+}
+.toggle {
+  text-align: center;
+  color: #000;
+  display: none;
+}
+@include mq(max, $mobile){
+  .showdetail {
+    .contents__inner {
+        height: auto;
+        overflow: hidden;
+      }
+    }
+  .toggle {
+    display: block;
   }
 }
 
