@@ -2,7 +2,7 @@
 
 - [Ialoo.ch](https://www.ialoo.ch/createur/fynoggeli/)
 - [Dédé & Charlotte, Rue de Lausanne 46, Fribourg](https://goo.gl/maps/zHu78jwnHB42)
-- La petite tribu, Rue de Vevey 58, Bulle
+- [La petite tribu, Rue de Vevey 58, Bulle](https://goo.gl/maps/kRbpfHfozH42)
 - Office du tourisme, Place Jean-Tinguely 1, Fribourg
 - Marché de noël de Villaz-St-Pierre (18.-19.11.17)
 - Marché de noël du quartier d'Alt, ARSEN'ALT, Derrière les Remparts, Fribourg (25.11.17)
