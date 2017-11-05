@@ -10,10 +10,10 @@ $base-line-height: $base-font-size + (setting(leading)/2);
 $base-unit: 'rem';
 $base-font-family: setting(font);
 
-$h1-font-size: 1    * $base-font-size;
-$h2-font-size: 1    * $base-font-size;
-$h3-font-size: 1    * $base-font-size;
-$h4-font-size: 1    * $base-font-size;
+$h1-font-size: 1 * $base-font-size;
+$h2-font-size: 1 * $base-font-size;
+$h3-font-size: 1 * $base-font-size;
+$h4-font-size: 1 * $base-font-size;
 
 $indent-amount: 40px;
 
@@ -28,21 +28,23 @@ body {
 
 a {
   text-decoration: none;
+  color: setting(link-color);
 }
 
 ul, ol {
   margin-top: 0;
   padding-left: 1em;
   list-style: none;
-  li {
-    position: relative;
-    &:before {
-      content: '–';
-      position: absolute;
-      left: -1em;
-      top: 0;
-      height: 1em;
-    }
+}
+
+li {
+  position: relative;
+  &:before {
+    content: '–';
+    position: absolute;
+    left: -1em;
+    top: 0;
+    height: 1em;
   }
 }
 
@@ -53,6 +55,7 @@ img {
 .logo-wrap {
   margin: 0;
 }
+
 .logo {
   display: block;
   width: (setting(logo-width)/setting(content-width)) * 100%;
@@ -61,12 +64,6 @@ img {
   g {
     fill: setting(logo-color);
   }
-
-  // @for $i from 1 through 9 {
-  //   .letter:nth-child(#{$i}) {
-  //     transform: translateY(#{$i}px)
-  //   }
-  // }
 }
 
 .images {
