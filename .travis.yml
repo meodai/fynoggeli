@@ -8,6 +8,6 @@ deploy:
   - edge: true
     skip_cleanup: true
     provider: script
-    script: gulp run build
+    script: npm run build
     on:
       branch: master
