@@ -77,7 +77,7 @@ gulp.task('images', ['clean'], () => {
     .pipe(gulp.dest('./build/images/'))
 });
 
-gulp.task('script', () => {
+gulp.task('script', ['clean'], () => {
   return gulp
     .src('src/*.js')
     .pipe(babel())
