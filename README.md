@@ -12,3 +12,5 @@ Ihre Leidenschaft ist es, kleinere Obbjekte aus Materialien zu kreieren welche s
 Gerne schnüffelt Sie auf Flohmärkten nach kleinen hübschen Dingen welche sie für ihre Arbeiten inspirieren.
 
 Ihre Objekte verkauft sie in Läden in Freiburg und Bulle und an Weihnachtsmärkte.
+
+[https://fynoeggeli.ch/](https://fynoeggeli.ch/)
